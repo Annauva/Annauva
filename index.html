@@ -6,19 +6,32 @@
     <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
-
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>A Grape Design</title>
   </head>
-  <body>
-    <header class="show">
-      <a href="#"><span class="about-btn">about</span></a>
-      <div class="logo">
-        <img src="resources/images/logo.gif" alt="A Grape Design Logo">
+  <body id="worksbg">
+
+    <div class="show-modal">
+      <div class="overlay"></div>
+      <div class="img-show">
+        <span>X</span>
+        <img src="">
       </div>
-        <a href="#"><span class="works-btn">works</span></a>
+    </div>
+
+    <header class="show">
+      <a href="about.html"><span class="about-btn">about</span></a>
+      <div class="logo">
+        <a href="index.html"><img src="resources/images/logo.gif" alt="A Grape Design Logo"></a>
+      </div>
+        <a href="#works"><span class="works-btn">works</span></a>
     </header>
+
+
 
     <main class="wrapper">
 
@@ -37,56 +50,200 @@
           </div>
 
           <div class="buttons-wrap">
-            <a href="#"><div class="button">
-              <h3>more about me</h3>
-            </div></a>
-            <a href="#"><div class="button">
-              <h3>get in touch</h3>
-            </div></a>
+            <div class="button">
+              <a href="about.html"><h3>more about me</h3></a>
+            </div>
+            <div class="button">
+              <a href="mailto:anna@agrapedesign.com"><h3>get in touch</h3></a>
+            </div>
           </div>
 
         </div>
 
       </section>
 
-      <section class="works">
+      <section id="works">
 
 
           <h1>works</h1>
-      <div class="works-container">
 
-        <div class="image-container">
-          <img src="resources/images/thumb-mercuryx.jpg" alt="mercury x website" class="image">
-          <div class="overlay">
-            <h2>Mercury X</h2>
-            <p>website + responsive</p>
+
+
+        <div class="web-container">
+
+          <h2 class="headline-web">Web</h2>
+
+          <div class="flex-container">
+              <div class="image-container">
+                <img src="resources/images/thumb-mercuryx.jpg" alt="mercury x website" class="image">
+                <div class="overlay-th">
+                  <h2>mercuryxofficial.com</h2>
+                  <p>website + responsive</p>
+                  </div>
+                </div>
+
+
+              <div class="image-container">
+                <img src="resources/images/thumb-fotsjukvard.jpg" alt="fotsjukvård.se website" class="image">
+                <div class="overlay-th">
+                  <h2>fotsjukvård.se</h2>
+                  <p>website + responsive</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+      <div class="illustration-gallery">
+        <div class="flex-container">
+          <h2 class="headline-illu">Illustration</h2>
+          <div class="masonry">
+
+            <div class="item">
+              <div class="item-content image-container popup">
+              <img src="resources\images\svenska-postkodlotteriet-granntestet.jpg" alt="" class="image">
+                <div class="overlay-th">
+                  <h2>Svenska Postkodlotteriet</h2>
+                  <p>Granntestet</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-content image-container popup">
+              <img src="resources\images\constructgubbe.jpg" alt="" class="image">
+                <div class="overlay-th">
+                  <h2>Mecha Grandpa</h2>
+                  <p>Construct token card for Magic the Gathering</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-content image-container popup">
+              <img src="resources\images\jackohearts.jpg" alt="" class="image">
+                <div class="overlay-th">
+                  <h2>Jack of Hearts</h2>
+                  <p>For an art project called Luck of the Draw</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-content image-container popup">
+              <img src="resources\images\thopter-token-mtg-1-724x1024.jpg" alt="" class="image">
+                <div class="overlay-th">
+                  <h2>Thopter Grandma</h2>
+                  <p>Thopter token card for Magic the Gathering</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-content image-container popup">
+              <img src="resources\images\allseeingcat.jpg" alt="" class="image">
+                <div class="overlay-th">
+                  <h2>All Knowing Cat</h2>
+                  <p>Just for fun</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-content image-container popup">
+              <img src="resources\images\psykologifabriken-illu_mbg.jpg" alt="" class="image">
+                <div class="overlay-th">
+                  <h2>Psykologifabriken</h2>
+                    <p>Mascot illustration</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-content image-container popup">
+              <img src="resources\images\soldier-token-mtg-724x1024.jpg" alt="" class="image">
+                <div class="overlay-th">
+                  <h2>Soldier</h2>
+                  <p>Soldier token card for Magic the Gathering</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-content image-container popup">
+              <img src="resources\images\characters-for-skim.jpg" alt="" class="image">
+                <div class="overlay-th">
+                  <h2>Set of characters for Skim</h2>
+                  <p>Not in use but they're awesome</p>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="item">
+              <div class="item-content image-container popup">
+              <img src="resources\images\lulebo-trygghetsboende.jpg" alt="" class="image">
+                <div class="overlay-th">
+                  <h2>Lulebo Trygghetsboende</h2>
+                  <p>Illustration for an ad for senior apartments. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-content image-container popup">
+              <img src="resources\images\designmarknad-poster-juli.jpg" alt="" class="image">
+                <div class="overlay-th">
+                  <h2>Poster for DesignmarknadSthlm</h2>
+                  <p>Poster for a night time market at Hötorgsterassen. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-content image-container popup">
+              <img src="resources\images\witch-icons.jpg" alt="" class="image">
+                <div class="overlay-th">
+                  <h2>Vector witch icons</h2>
+                  <p>Just for fun. </p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="image-container">
-          <img src="resources/images/thumb-mercuryx.jpg" alt="mercury x website" class="image">
-          <div class="overlay">
-            <h2>hej</h2>
-          </div>
-        </div>
-
-        <div class="image-container">
-          <img src="resources/images/thumb-mercuryx.jpg" alt="mercury x website" class="image">
-          <div class="overlay">
-            <h2>hej</h2>
-          </div>
-        </div>
-
-      </div>
 
 
       </section>
 
-    </main>
 
 
+</main>
 
-    <footer>
+<footer>
+
+  <div class="footercontent">
+    <div class="copyright">
+      <span>&copy; Anna Grape 2018</span>
+    </div>
+
+    <div class="shoplinks">
+      <span>Redbubble shop</span><span class="dot">&middot;</span> <span>Etsy Shop</span> <span class="dot">&middot;</span><span>MtG token shop</span>
+    </div>
+
+    <div class="sociallinks">
+      <ul>
+      <li><i class="fab fa-facebook-square fa-2x"></i></li>
+      <li><i class="fab fa-instagram fa-2x"></i></li>
+      <li><i class="fab fa-pinterest-square fa-2x"></i></li>
+      </ul>
+
+    </div>
+
+  </div>
+
     </footer>
 
 
