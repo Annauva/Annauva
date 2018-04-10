@@ -8,14 +8,14 @@ $(function () {
         $(".img-show img").attr("src", $src);
         $("header").addClass("hide");
         $("header").removeClass("show");
-        $("#worksbg").addClass("stopscroll");
+        $("#noscroll").addClass("stopscroll");
     });
 
     $("span, .overlay").click(function () {
         $(".show-modal").fadeOut(0);
         $("header").removeClass("hide");
         $("header").addClass("show");
-        $("#worksbg").removeClass("stopscroll");
+        $("#noscroll").removeClass("stopscroll");
     });
 
 });
@@ -39,7 +39,7 @@ $(window).scroll(
     // get current distance from top of viewport
     var currentTop = $(window).scrollTop();
     // define the header height here
-    var headerHeight = 200;
+    var headerHeight = 100;
     // if user has scrolled past header, initiate the scroll up/scroll down hide show effect
     if( $(window).scrollTop() > headerHeight ) {
       if (currentTop < this.previousTop) {

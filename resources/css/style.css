@@ -46,6 +46,7 @@ a {
   border: 4px solid #f9fbe7;
   text-align: center;
   width: 46%;
+  -webkit-transition:all 0.2s;
   transition: all 0.2s;
 }
 
@@ -55,7 +56,7 @@ a {
 }
 
 .button:hover {
-  background-color: #a25e7d;
+  background-color: #ffc8b9;
 }
 
 .aboutbtn {
@@ -127,6 +128,7 @@ header span:after {
     width: 90%;
     padding-top: 10px;
     border-bottom: 6px solid #ffc8b9;
+    -webkit-transition: 1s;
     transition: 1s;
 }
 
@@ -149,11 +151,13 @@ header span:hover:after {
 
 .show {
   top: 0px;
+  -webkit-transition: all 0.2s linear 0.2s;
   transition: all 0.2s linear 0.2s;
 }
 
 .hide {
   top: -155px;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -225,12 +229,9 @@ header span:hover:after {
   .triangle {
     top: 670px;
   }
-
   .about-wrap {
     width: 90%;
   }
-
-
 }
 
 @media only screen and (max-width: 550px) {
@@ -362,8 +363,6 @@ header span:hover:after {
   .overlay-th h2 {
     font-size: 1rem;
   }
-
-
 }
 
 
@@ -374,9 +373,7 @@ header span:hover:after {
   width: 90%;
   margin: 100px 0;
   position: relative;
-
   text-align: center;
-
   border-top: 4px solid  #ffc8b9;
   color: #ffc8b9;
 }
@@ -445,14 +442,16 @@ header span:hover:after {
     left: 0;
     bottom: 0;
 }
+
 .show-modal .img-show {
-    width: 700px;
+    max-height: 100%;
+    min-width: 600px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 11;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .img-show span {
@@ -471,6 +470,10 @@ header span:hover:after {
 @media only screen and (max-width: 960px) {
   .masonry {
     column-count: 2;
+  }
+  .show-modal .img-show {
+      max-width: 90%;
+      min-width: 90%;
   }
 }
 
@@ -494,7 +497,6 @@ header span:hover:after {
   width: 50%;
   max-width: 800px;
   margin-top: 50px;
-
 }
 
 .annaimage img {
@@ -511,7 +513,6 @@ header span:hover:after {
 .aboutpage-text {
   color: #378989;
   font-size: 0.8rem;
-
   border: 4px solid #378989;
   padding: 40px;
   margin-bottom: 40px;
@@ -524,7 +525,6 @@ header span:hover:after {
 }
 
 @media only screen and (max-width: 500px) {
-
   .abouttext-wrap {
     width: 90%;
   }
@@ -535,6 +535,85 @@ header span:hover:after {
   }
 }
 
+/*Website portfolio pages */
+
+.showcasepage {
+    position: relative;
+    background-color: #f9fbe7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0;
+    text-align: center;
+}
+
+
+.images {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgbox {
+  width: 40%;
+  min-width: 0;
+  padding: 30px;
+}
+
+.imgbox img {
+  width: 100%;
+  height: auto;
+}
+
+.textbox {
+  width: 50%;
+  padding-bottom: 40px;
+}
+
+.textbox p {
+  color: #378989;
+  font-size: 0.8rem;
+}
+
+.textbox a {
+  color: #378989;
+  font-size: 1rem;
+  font-weight: 500;
+  -webkit-transition:400ms;
+  transition: 400ms;
+}
+
+.textbox a:hover {
+  color: #874466;
+}
+
+.showcasepage h2 {
+  color: #378989;
+  padding-bottom: 40px;
+  font-size: 1.6rem;
+}
+
+.more {
+  font-size: 2.2rem;
+}
+
+.images.fsv {
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 1160px) {
+  .images {
+    flex-direction: column;
+  }
+  .imgbox {
+    width: 80%;
+  }
+  .textbox {
+    width: 80%;
+  }
+}
 
 /*Footer */
 
@@ -594,6 +673,18 @@ footer {
   padding: 10px;
 }
 
+.footercontent a {
+  color: #ffc8b9;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.footercontent a:hover {
+  color: #f9fbe7;
+}
+
+
+
 @media only screen and (max-width: 960px) {
   .copyright {
     display: none;
@@ -635,11 +726,8 @@ footer {
 }
 
 @media only screen and (max-width: 560px) {
-
   .flex-container {
     padding: 90px 0 0 0;
   }
-
-
 
 }
